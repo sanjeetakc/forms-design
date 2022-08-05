@@ -1,0 +1,234 @@
+body {
+  height: 100vh;
+  width: 100vh;
+  background-image: url(/img/bodybg.jpg);
+  background-size: 100% 100%;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  gap: 60px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.top-circle {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 15px;
+}
+
+.anywhere {
+  display: flex;
+  position: relative;
+  align-items: center;
+  color: #fff;
+}
+
+.anywhere div {
+  margin-right: 5px;
+}
+
+.home-join-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 60px;
+  color: #D3D3D3;
+}
+
+.form-group-container {
+  width: 50%;
+  margin-top: 16%;
+  margin-left: 30px;
+}
+
+.form-group-container p {
+  color: #808080;
+  font-size: 16px;
+}
+
+.form-group-container h1 {
+  color: #fff;
+}
+
+.form-group-container h1 span {
+  color: blue;
+  font-size: 50px;
+}
+
+.form-group-container p span {
+  color: blue;
+}
+
+.form-input-container div input {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding-left: 20px;
+  outline: none;
+}
+
+.form-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 20px;
+  margin-top: 16%;
+}
+
+#form-input-emailcontainer {
+  grid-column: 1/3;
+}
+
+#form-input-firstnamecontainer {
+  position: relative;
+  height: 50px;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  left: 20px;
+  font-size: 15px;
+  padding: 0px;
+  color: #808080;
+  pointer-events: none;
+}
+
+#form-input-firstnamecontainer input:focus + .label-name .content-name,
+#form-input-firstnamecontainer input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+}
+
+#form-input-lastnamecontainer label::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+#form-input-lastnamecontainer {
+  position: relative;
+  height: 50px;
+}
+
+#form-input-lastnamecontainer input:focus + .label-name .content-name,
+#form-input-lastnamecontainer input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+}
+
+#form-input-emailcontainer label::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+#form-input-emailcontainer {
+  position: relative;
+  height: 50px;
+}
+
+#form-input-emailcontainer input:focus + .label-name .content-name,
+#form-input-emailcontainer input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+}
+
+#form-input-firstnamecontainer input:focus {
+  border-radius: 10px;
+  border-color: aqua;
+  border-style: solid;
+}
+
+#form-input-lastnamecontainer input:focus {
+  border-radius: 10px;
+  border-color: aqua;
+  border-style: solid;
+}
+
+#form-input-passwordcontainer input:focus {
+  border-radius: 10px;
+  border-color: blue;
+  border-style: solid;
+}
+
+#form-input-conformpasswordcontainer input:focus {
+  border-radius: 10px;
+  border-color: aqua;
+  border-style: solid;
+}
+
+#form-input-emailcontainer input:focus {
+  border-radius: 10px;
+  border-color: aqua;
+  border-style: solid;
+}
+
+#form-input-conformpasswordcontainer::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+#form-input-conformpasswordcontainer {
+  position: relative;
+  height: 50px;
+}
+
+#form-input-conformpasswordcontainer input:focus + .label-name .content-name,
+#form-input-conformpasswordcontainer input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+}
+
+#form-input-passwordcontainer::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+}
+
+#form-input-passwordcontainer {
+  position: relative;
+  height: 50px;
+}
+
+#form-input-passwordcontainer input:focus + .label-name .content-name,
+#form-input-passwordcontainer input:valid + .label-name .content-name {
+  transform: translateY(-100%);
+}
+
+.form-button-container {
+  display: flex;
+  margin-left: 30px;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.form-button-container button {
+  width: 160px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+}
+
+#submit-btn {
+  background-color: blue;
+  color: #fff;
+}/*# sourceMappingURL=stylesheets.css.map */
